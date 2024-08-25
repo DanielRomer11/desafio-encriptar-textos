@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="Logo de alura">
+    </header>
+    <main class="presentacion">
+        <div class="presentacion__texto">
+            <textarea id="texto__encriptar" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="presentacion__botones">
+            <div class="presentacion__botones__info">
+                <img src="./assets/exclamacion.png" alt="Icono de exclamación">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="presentacion__botones__container">
+                <button class="presentacion__botones__click encriptar">Encriptar</button>
+                <button class="presentacion__botones__click desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="presentacion__mensaje_encriptado">
+            <div class="presentacion__mensaje_encriptado__contenedor">
+                <img src="./assets/Muñeco.png" alt="Imagen no texto" class="presentacion__mensaje_encriptado__imagen">
+                <div class="presentacion__mensaje_encriptado__texto">
+                    <p class="negrita">Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea id="texto__encriptado" readonly></textarea>
+            </div>
+            <button class="presentacion__botones__click copiar" id="copiar" disabled>Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Daniel Romer ©2024</p>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>
